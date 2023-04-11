@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="styles/design.css.css" rel="stylesheet">
+  <title>Pierce Family Website</title>
+</head>
+
+<body>
+  <div class="top-bar">
+    <p class="title">Shared Resources Request Form<p>    
+  </div>
+<form action="mailto:dillonpierce95@gmail.com" method="post" enctype="text/plain">
+
+  <label for="department">Department: </label><input type ="text" list="department-choice" id="department" name="department" />
+    <datalist id="department-choice">
+        <option value = "Audit"></option>
+        <option value = "Tax"></option>
+        <option value = "401k"></option>
+        <option value = "IT"></option>
+        <option value = "Admin"></option>
+        <option value = "Other"></option>
+    </datalist>
+  <br><br>
+  <label for="assigned-by">Assigned by: </label><input name="assigned-by" id ="assigned-by" type = "text" placeholder="Your name here"/>
+  <br><br>
+  <label for="category">Task Category: </label><input type = "text" list ="category-choice" id="category" name="categeory">
+  <datalist id="category-choice">
+    <option value = "AAF Tool"></option>
+    <option value = "JE Testing"></option>
+    <option value = "File Conversion"></option>
+    <option value = "Management Report"></option>
+    <option value = "AR Aging"></option>
+    <option value = "AP Aging"></option>
+  </datalist>
+  <br><br>
+
+  <br><br>
+    <input type="submit">
+</form>
+
+
+</body>
+</html>
