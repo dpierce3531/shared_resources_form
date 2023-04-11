@@ -4,8 +4,8 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link href="styles/design.css.css" rel="stylesheet">
-  <title>Sharead Resources Request Form</title>
+  <link href="styles/design.css" rel="stylesheet">
+  <title>Shared Resources Request Form</title>
 </head>
 
 <body>
@@ -14,7 +14,7 @@
   </div>
 <form action="mailto:dillonpierce95@gmail.com" method="post" enctype="text/plain">
 
-  <label for="department">Department </label><input type ="text" list="department-choice" id="department" name="department" />
+  <label for="department">Department</label><input type ="text" list="department-choice" id="department" name="department" />
     <datalist id="department-choice">
         <option value = "Audit"></option>
         <option value = "Tax"></option>
@@ -24,28 +24,32 @@
         <option value = "Other"></option>
     </datalist>
   <br><br>
-  <label for="assigned-by">Assigned by </label><input name="assigned-by" id ="assigned-by" type = "text" placeholder="Your name here"/>
+  <label for="assigned-by">Assigned by</label><input name="assigned-by" id ="assigned-by" type = "text" placeholder="Your name here"/>
   <br><br>
-  <label for="category">Task Category </label><input type = "text" list ="category-choice" id="category" name="categeory">
-  <datalist id="category-choice">
-    <option value = "AAF Tool"></option>
-    <option value = "JE Testing"></option>
-    <option value = "File Conversion"></option>
-    <option value = "Management Report"></option>
-    <option value = "AR Aging"></option>
-    <option value = "AP Aging"></option>
-  </datalist>
+  <label for="category">Task Category</label>
+  <select name="category" id="category-choice">
+    <option value = "">--Select a category--</option>
+    <option value = "AAF Tool">AAF Tool</option>
+    <option value = "JE Testing">JE Testing</option>
+    <option value = "File Conversion">File Conversion</option>
+    <option value = "Management Report">Management Report</option>
+    <option value = "AR Aging">AR Aging</option>
+    <option value = "AP Aging">AP Aging</option>
+  </select>
   <br><br>
-  <label for ="description">Task Description </label><textarea id="description" required></textarea>
+  <label for ="description">Task Description</label><textarea id="description" required></textarea>
   <br><br>
-    <label for="type">Type</label><input type="text" list ="type-choice" id="type"/>
-  <datalist id="type-choice">
-    <option value = "Audit"></option>
-    <option value = "Tax"></option>
-    <option value = "Other"></option>
-  </datalist>
+    <label for="type">Type</label>
+  <select id="type-choice">
+    <option value = "">--Select the Type--</option>
+    <option value = "Audit">Audit</option>
+    <option value = "Tax">Tax</option>
+    <option value = "Other">Other</option>
+  </select>
   <br><br>
   <label>Engagement Name</label><input type="text">
+  <br><br>
+  <label>Engagment Code/Legacy Code<label><input type="text">
   <br><br>
   <label>Deadline</label><input type="date">
   <br><br>
