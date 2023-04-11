@@ -5,7 +5,7 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link href="styles/design.css.css" rel="stylesheet">
-  <title>Pierce Family Website</title>
+  <title>Sharead Resources Request Form</title>
 </head>
 
 <body>
@@ -14,7 +14,7 @@
   </div>
 <form action="mailto:dillonpierce95@gmail.com" method="post" enctype="text/plain">
 
-  <label for="department">Department: </label><input type ="text" list="department-choice" id="department" name="department" />
+  <label for="department">Department </label><input type ="text" list="department-choice" id="department" name="department" />
     <datalist id="department-choice">
         <option value = "Audit"></option>
         <option value = "Tax"></option>
@@ -24,9 +24,9 @@
         <option value = "Other"></option>
     </datalist>
   <br><br>
-  <label for="assigned-by">Assigned by: </label><input name="assigned-by" id ="assigned-by" type = "text" placeholder="Your name here"/>
+  <label for="assigned-by">Assigned by </label><input name="assigned-by" id ="assigned-by" type = "text" placeholder="Your name here"/>
   <br><br>
-  <label for="category">Task Category: </label><input type = "text" list ="category-choice" id="category" name="categeory">
+  <label for="category">Task Category </label><input type = "text" list ="category-choice" id="category" name="categeory">
   <datalist id="category-choice">
     <option value = "AAF Tool"></option>
     <option value = "JE Testing"></option>
@@ -36,9 +36,21 @@
     <option value = "AP Aging"></option>
   </datalist>
   <br><br>
-
+  <label for ="description">Task Description </label><textarea id="description" required></textarea>
   <br><br>
-    <input type="submit">
+    <label for="type">Type</label><input type="text" list ="type-choice" id="type"/>
+  <datalist id="type-choice">
+    <option value = "Audit"></option>
+    <option value = "Tax"></option>
+    <option value = "Other"></option>
+  </datalist>
+  <br><br>
+  <label>Engagement Name</label><input type="text">
+  <br><br>
+  <label>Deadline</label><input type="date">
+  <br><br>
+  
+ <input type="submit">
 </form>
 
 
