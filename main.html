@@ -13,19 +13,22 @@
     <p class="title">Shared Resources Request Form<p>    
   </div>
 <form action="mailto:dillonpierce95@gmail.com" method="post" enctype="text/plain">
-
-  <label for="department">Department</label><input type ="text" list="department-choice" id="department" name="department" />
-    <datalist id="department-choice">
-        <option value = "Audit"></option>
-        <option value = "Tax"></option>
-        <option value = "401k"></option>
-        <option value = "IT"></option>
-        <option value = "Admin"></option>
-        <option value = "Other"></option>
-    </datalist>
-  <br><br>
+<div>
+  <label for="department">Department</label>
+    <select id="department-choice">
+        <option value = "">--Select your department--</option>
+        <option value = "Audit">Aduit</option>
+        <option value = "Tax">Tax</option>
+        <option value = "401k">401k</option>
+        <option value = "IT">IT</option>
+        <option value = "Admin">Admin</option>
+        <option value = "Other">Other</option>
+    </select>
+    </div>
+  <div>
   <label for="assigned-by">Assigned by</label><input name="assigned-by" id ="assigned-by" type = "text" placeholder="Your name here"/>
-  <br><br>
+</div>
+<div>
   <label for="category">Task Category</label>
   <select name="category" id="category-choice">
     <option value = "">--Select a category--</option>
@@ -36,9 +39,11 @@
     <option value = "AR Aging">AR Aging</option>
     <option value = "AP Aging">AP Aging</option>
   </select>
-  <br><br>
+  </div>
+  <div>
   <label for ="description">Task Description</label><textarea id="description" required></textarea>
-  <br><br>
+  </div>
+  <div>
     <label for="type">Type</label>
   <select id="type-choice">
     <option value = "">--Select the Type--</option>
@@ -46,13 +51,16 @@
     <option value = "Tax">Tax</option>
     <option value = "Other">Other</option>
   </select>
-  <br><br>
+  </div>
+  <div>
   <label>Engagement Name</label><input type="text">
-  <br><br>
-  <label>Engagment Code/Legacy Code<label><input type="text">
-  <br><br>
+  </div>
+  <div>
+  <label>Engagment Code</label><input type="text">
+  </div>
+  <div>
   <label>Deadline</label><input type="date">
-  <br><br>
+  </div>
   
  <input type="submit">
 </form>
