@@ -1,0 +1,34 @@
+body {
+    font-family: sans-serif;
+}
+
+form {
+    margin:auto;
+    padding: 1em;
+    border:1px solid black;
+    border-radius: 1em;
+    width:60%;
+    min-width: 500px;
+}
+
+input {
+    display: inline-block;
+    margin-left:1em;
+}
+
+textarea {
+    vertical-align: text-top;
+    height: 100px;
+    width: 50%;
+    margin-left:1em;
+}
+
+div {
+    padding:1em;
+}
+
+.title {
+    text-align: center;
+}
+
+
